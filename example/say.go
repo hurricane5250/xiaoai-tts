@@ -9,11 +9,11 @@ import (
 )
 
 func main() {
-	m := &xiaoaitts.MiAccount{
-		User: "xxxx",
-		Pwd:  "xxxxx",
+	x, err := xiaoaitts.New("xxxx", "xxxx")
+	if err != nil {
+		return
 	}
-	x := xiaoaitts.NewXiaoAi(m)
+
 	input := bufio.NewReader(os.Stdin)
 	for {
 		fmt.Println("Please Input Text")

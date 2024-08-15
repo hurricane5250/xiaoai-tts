@@ -1,22 +1,23 @@
-# xiaoai-tts
+# go-xiaoai
 Xiaoai speaker customizes the text to read aloud.
 
 
 ## 安装
 
 ```bash
-go get xxxxxxx
+go get github.com/YoungBreezeM/xiaoai-tts
 ```
 
 ## Example
 
 ```golang
-m := &models.MiAccount{
-		User: "xxxx",
-		Pwd:  "xxxx",
-	}
 //new a xioaxi client
-xiaoai := service.NewXiaoAi(m)
+xiaoai, err := xiaoaitts.New("xxxx", "xxxx")
+if err != nil {
+		return
+}
+
+
 //
 xiaoai.Say("hello")
 //
