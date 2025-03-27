@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	xiaoaitts "github.com/YoungBreezeM/xiaoai-tts"
+	xiaoaitts "github.com/hurricane5250/xiaoai-tts"
 )
 
 func main() {
